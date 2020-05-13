@@ -47,6 +47,7 @@ main .nav_container{
   height: calc(100vh - 100px);
   width: 200px;
   float:left;
+  overflow: hidden;
 }
 /*logo*/
 main .title{
@@ -56,6 +57,7 @@ main .title img{
   height: 100px;
   width: 100%;
 }
+/*top menu*/
 main .top-menu{
   height: 110px;
 }
@@ -71,6 +73,7 @@ main .top-menu img{
   width: 30px;
   vertical-align: middle;
 }
+/*zona playlist*/
 main .playlist{
   height: 100px;
 }
@@ -91,11 +94,38 @@ main .playlist i{
   vertical-align: middle;
 }
 main .playlist_container{
-  height: calc(100vh - 410px)
+  height: calc(100vh - 510px)
 }
-main .name_playlist{
+main .playlist_container .name_playlist{
   overflow-y: auto;
   height: 80%;
+}
+main .playlist_container .name_playlist{
+  line-height: 35px;
+}
+/*sezione utente*/
+main .utente{
+  padding-left: 13px;
+  padding-right: 13px;
+}
+main .utente img{
+  height: 15px;
+  vertical-align: middle;
+}
+
+main .utente .name img{
+  height: 30px;
+  background-color: grey;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+main .utente .name h3{
+  display: inline-block;
+  color: white;
+}
+main .utente hr{
+  margin: 10px 0;
 }
 
 
