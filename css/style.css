@@ -4,6 +4,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+/*regole generali*/
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration:none;
+  color: white;
+}
 /* clearfix */
 .container::after{
   content: '';
@@ -19,12 +30,7 @@ main .main_container{
   width: calc(100% - 200px);
   overflow-y: auto;
 }
-main .nav_container{
-  background-color: #000000;
-  height: calc(100vh - 100px);
-  width: 200px;
-  float:left;
-}
+
 main .top_fix{
   left: 200px;
   position: fixed;
@@ -34,20 +40,67 @@ main .top_fix{
   opacity: 0.5;
   z-index: 3;
 }
+
+/*nav*/
+main .nav_container{
+  background-color: #000000;
+  height: calc(100vh - 100px);
+  width: 200px;
+  float:left;
+}
+/*logo*/
 main .title{
   height: 100px;
-  background-color: red;
+}
+main .title img{
+  height: 100px;
+  width: 100%;
 }
 main .top-menu{
-  height: 100px;
-  background-color: green;
-
+  height: 110px;
+}
+main .top-menu li{
+  padding-left: 10px;
+  margin-bottom: 5px;
+  border-left: 3px solid;
+}
+main .top-menu li:first-child{
+  border-left: 3px solid #adff2f;
+}
+main .top-menu img{
+  width: 30px;
+  vertical-align: middle;
 }
 main .playlist{
-  height: calc(100vh - 300px);
-  overflow-y: auto;
-  background-color: pink;
+  height: 100px;
 }
+main .playlist h3{
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+main .playlist,
+main .name_playlist{
+  padding-left: 13px;
+}
+main a{
+  color: #838383;
+}
+main .playlist i{
+  font-size: 40px;
+  vertical-align: middle;
+}
+main .playlist_container{
+  height: calc(100vh - 410px)
+}
+main .name_playlist{
+  overflow-y: auto;
+  height: 80%;
+}
+
+
+
+
 
 /* FOOTER */
 footer .player{
