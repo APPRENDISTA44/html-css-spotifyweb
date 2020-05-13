@@ -11,12 +11,6 @@
   clear: both;
 }
 /* MAIN */
-main .nav_container{
-  background-color: #000000;
-  height: 100%;
-  width: 200px;
-  float:left;
-}
 main .main_container{
   color: white;
   background-color: #141922;
@@ -24,6 +18,12 @@ main .main_container{
   float: left;
   width: calc(100% - 200px);
   overflow-y: auto;
+}
+main .nav_container{
+  background-color: #000000;
+  height: calc(100vh - 100px);
+  width: 200px;
+  float:left;
 }
 main .top_fix{
   left: 200px;
@@ -91,7 +91,7 @@ footer .player .center{
 }
 footer .player .center .comandi{
   text-align: center;
-  padding-bottom: 15px;
+  padding-bottom: 12px;
 }
 footer .player .center .comandi i{
   vertical-align: middle;
@@ -112,23 +112,23 @@ footer .player .center .comandi i.fa-caret-right{
   margin-left: 30px;
   margin-right: 15px;
 }
-/*barra riproduzione*/
 
+/*barra riproduzione*/
 footer .player .center .minutes{
   position: relative;
   padding: 0 37px;
 }
-footer .player .center .minutes .barra{
+footer .player .center .barra{
   display: inline-block;
   width: 100%;
 }
-footer .player .center .minutes #barra_uno{
+footer .player .barra_uno{
   float: left;
   width: 20%;
   border: 2px solid #c1c1c1;
   border-radius: 5px;
 }
-footer .player .center .minutes #barra_due{
+footer .player .barra_due{
 float: left;
   width: 80%;
   border: 2px solid #5a5a5a;
@@ -140,7 +140,7 @@ footer .player .center .minutes i{
   left: 23%;
   display: none;
 }
-footer .player .center .minutes:hover #barra_uno{
+footer .player .center .minutes:hover .barra_uno{
   border: 2px solid green;
 }
 footer .player .center .minutes:hover .fa-circle{
@@ -157,4 +157,30 @@ footer .player .center .minutes .two{
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+/*parte sinistra con volume*/
+footer .player .right .icons{
+  display: inline-block;
+}
+footer .player .right .icons i{
+  margin-right: 5px;
+}
+footer .player .right .volume{
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  vertical-align: middle;
+}
+footer .player .right .volume i{
+  position: absolute;
+  bottom: -6px;
+  left: 15%;
+  display: none;
+}
+footer .player .right .volume:hover .fa-circle{
+  display: inline;
+}
+footer .player .right .volume:hover .barra_uno{
+  border: 2px solid green;
 }
