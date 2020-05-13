@@ -137,7 +137,7 @@ float: left;
 footer .player .center .minutes i{
   position: absolute;
   bottom: -2.7px;
-  left: 20%;
+  left: 23%;
   display: none;
 }
 footer .player .center .minutes:hover #barra_uno{
