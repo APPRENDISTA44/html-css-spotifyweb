@@ -66,8 +66,11 @@ main .top-menu li{
   margin-bottom: 5px;
   border-left: 3px solid;
 }
-main .top-menu li:first-child{
+main .top-menu li.green{
   border-left: 3px solid #adff2f;
+}
+main .top-menu li:first-child{
+  display: none;
 }
 main .top-menu img{
   width: 30px;
@@ -127,7 +130,51 @@ main .utente .name h3{
 main .utente hr{
   margin: 10px 0;
 }
+/* barra di sinistra responsive */
+@media all and (max-width: 767px){
+  main .nav_container span,
+  main .nav_container .utente .name h3,
+  main .nav_container .utente hr,
+  main .nav_container .playlist,
+  main .nav_container .playlist_container,
+  main .nav_container .title
+  {
+    display: none;
+  }
+  main .nav_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main .nav_container .top-menu li{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    margin-bottom: 10px;
+  }
+  main .nav_container .top-menu li:first-child{
+    display:list-item;
+  }
+  main .nav_container .top-menu li.green{
+    border-left: 0px
+  }
+  main .nav_container .utente a img{
+    margin-bottom: 10px;
+    margin-left: 5px;
+  }
+  main .nav_container{
+    width: 50px;
+  }
+  main .main_container{
+    width: calc(100% - 50px);
+  }
+  main .top_fix{
+    left: 50px;
+    width: calc(100% - 50px);
+  }
 
+}
 
 
 
