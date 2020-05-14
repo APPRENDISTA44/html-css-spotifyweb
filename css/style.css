@@ -65,25 +65,37 @@ main .main_container .categorie li{
   display: inline-block;
   margin-right: 24px;
   font-size: 14px;
+  margin-bottom: 10px;
 }
 
 
 /*parte principale*/
 main .main_container .wrapper{
-  padding: 40px 20px;
+  padding: 0px 20px;
 }
 main .main_container .wrapper p{
   color: #a3a3a3;
 }
 main .main_container .wrapper h2{
-  margin-bottom: 30px;
+  margin: 30px 0;
 }
 
 /*contenitori*/
 main .main_container .wrapper .box{
   width: calc(100%/6);
   float: left;
+  min-height: 350px;
 }
+main .main_container .wrapper.john h2,
+main .main_container .wrapper.artist h2{
+  margin: 0;
+}
+main .main_container .wrapper.john p,
+main .main_container .wrapper.artist p{
+  margin: 10px 0;
+}
+
+
 main .main_container .wrapper .box .box_content{
   width: 90%;
   text-align: center;
@@ -97,6 +109,9 @@ main .main_container .wrapper .box .box_content img{
 main .main_container .wrapper.artist .box .box_content img{
   border-radius: 50%;
 }
+main .main_container .wrapper .box .box_content p{
+  font-size: 13px;
+}
 
 
 
@@ -105,6 +120,10 @@ main .main_container .wrapper.artist .box .box_content img{
   main .main_container .wrapper .box{
     width: calc(100%/2);
   }
+  main .main_container .wrapper.recently .box .box_content p{
+    margin-bottom: 10px;
+  }
+
 }
 @media all and (min-width: 992px) and (max-width: 1200px){
   main .main_container .wrapper .box{
