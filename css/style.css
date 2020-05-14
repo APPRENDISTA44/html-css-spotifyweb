@@ -29,7 +29,6 @@ main .main_container{
   float: left;
   width: calc(100% - 200px);
   overflow-y: auto;
-
 }
 main a{
   color: #a3a3a3;
@@ -51,7 +50,6 @@ main .top_fix{
 main .top_fix .upgrade{
   position: absolute;
   right: 20px;
-
 }
 main .top_fix .upgrade a{
   color: white;
@@ -72,12 +70,20 @@ main .main_container .categorie li{
   margin-right: 24px;
   font-size: 14px;
   margin-bottom: 10px;
+  position: relative;
 }
 main .main_container .categorie li:last-child{
   margin-right: 0;
-
 }
-
+main .main_container .categorie li hr{
+  border-color: #adff2f;
+  border-width: 1px;
+  position: absolute;
+  width: 35px;
+  left: 50%;
+  bottom: -5px;
+  transform: translate(-50%, -50%);
+}
 
 /*parte principale*/
 main .main_container .wrapper{
@@ -104,8 +110,6 @@ main .main_container .wrapper.john p,
 main .main_container .wrapper.artist p{
   margin: 10px 0;
 }
-
-
 main .main_container .wrapper .box .box_content{
   width: 90%;
   text-align: center;
@@ -122,10 +126,24 @@ main .main_container .wrapper.artist .box .box_content img{
 main .main_container .wrapper .box .box_content p{
   font-size: 13px;
 }
-
-
-
-
+main .main_container .wrapper .box .box_content .picture{
+  position: relative;
+}
+main .main_container .wrapper .box .box_content i{
+  color: white;
+  font-size: 5em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+main .main_container .wrapper .box .box_content .picture:hover i.fa-play-circle{
+  display: inline;
+}
+main .main_container .wrapper .box .box_content .picture:hover img{
+  opacity: 0.5;
+}
 @media all and (max-width: 991px){
   main .main_container .wrapper .box{
     width: calc(100%/2);
@@ -133,14 +151,12 @@ main .main_container .wrapper .box .box_content p{
   main .main_container .wrapper.recently .box .box_content p{
     margin-bottom: 10px;
   }
-
 }
 @media all and (min-width: 992px) and (max-width: 1200px){
   main .main_container .wrapper .box{
     width: calc(100%/4);
   }
 }
-
 /*nav*/
 main .nav_container{
   background-color: #000000;
@@ -202,7 +218,7 @@ main .playlist_container{
 }
 main .playlist_container .name_playlist{
   overflow-y: auto;
-  height: 80%;
+  height: 90%;
 }
 main .playlist_container .name_playlist{
   line-height: 35px;
@@ -230,7 +246,7 @@ main .utente .name h3{
 }
 main .utente hr{
   margin: 10px 0;
-  color: #a3a3a3;
+  border-color: #a3a3a3;
   border-width: 0.1px;
 
 }
@@ -277,7 +293,14 @@ main .utente hr{
     left: 50px;
     width: calc(100% - 50px);
   }
-
+}
+@media all and (max-height: 600px){
+    main .nav_container .utente{
+      display: none;
+    }
+    main .playlist_container{
+      height: calc(100vh - 400px)
+    }
 }
 
 /* FOOTER */
