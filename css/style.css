@@ -31,7 +31,7 @@ main .main_container{
   overflow-y: auto;
 
 }
-
+/*effettua l'upgrade*/
 main .top_fix{
   left: 200px;
   position: fixed;
@@ -43,13 +43,22 @@ main .top_fix{
   align-items: center;
 }
 main .top_fix .upgrade{
-  color: white;
   position: absolute;
   right: 20px;
+
+}
+main .top_fix .upgrade a{
+  color: white;
   padding: 10px;
   border: 1px solid white;
   border-radius: 20px;
 }
+
+
+main .main_container .categorie li{
+  display: inline-block;
+}
+
 
 
 
