@@ -34,6 +34,9 @@ main .main_container{
 main a{
   color: #a3a3a3;
 }
+main a:hover{
+  color: white;
+}
 /*effettua l'upgrade*/
 main .top_fix{
   left: 200px;
@@ -52,9 +55,12 @@ main .top_fix .upgrade{
 }
 main .top_fix .upgrade a{
   color: white;
-  padding: 10px;
+  padding: 10px 20px;
   border: 1px solid white;
   border-radius: 20px;
+}
+main .top_fix .upgrade:hover{
+  transform: scale(1.1);
 }
 /*menu superiore*/
 main .main_container .categorie{
@@ -66,6 +72,10 @@ main .main_container .categorie li{
   margin-right: 24px;
   font-size: 14px;
   margin-bottom: 10px;
+}
+main .main_container .categorie li:last-child{
+  margin-right: 0;
+
 }
 
 
@@ -131,7 +141,6 @@ main .main_container .wrapper .box .box_content p{
   }
 }
 
-
 /*nav*/
 main .nav_container{
   background-color: #000000;
@@ -151,6 +160,9 @@ main .title img{
 /*top menu*/
 main .top-menu{
   height: 110px;
+}
+main #home{
+  color: white;
 }
 main .top-menu li{
   padding-left: 10px;
@@ -218,6 +230,9 @@ main .utente .name h3{
 }
 main .utente hr{
   margin: 10px 0;
+  color: #a3a3a3;
+  border-width: 0.1px;
+
 }
 /* barra di sinistra responsive */
 @media all and (max-width: 767px){
@@ -265,9 +280,6 @@ main .utente hr{
 
 }
 
-
-
-
 /* FOOTER */
 footer .player{
   color: white;
@@ -299,7 +311,16 @@ footer .player .left p{
 footer .player .left .icons{
   display: inline-block;
   padding-left: 20px;
-  color: #838383;
+}
+footer .player .left .icons a{
+  color: #a3a3a3;
+}
+footer .player .left .icons a:hover{
+  color: white;
+}
+footer .player .left .text p:hover{
+  color: white;
+  text-decoration: underline;
 }
 footer .player .left .icons i:first-child{
   margin-right: 5px;
@@ -314,6 +335,9 @@ footer .player .center .comandi{
 }
 footer .player .center .comandi i{
   vertical-align: middle;
+}
+footer .player .center .comandi i:hover{
+  transform: scale(1.5);
 }
 footer .player .center .comandi i.fa-random{
   font-size: 20px;
@@ -356,7 +380,7 @@ float: left;
 footer .player .center .minutes i{
   position: absolute;
   bottom: -2.7px;
-  left: 23%;
+  left: 22%;
   display: none;
 }
 footer .player .center .minutes:hover .barra_uno{
