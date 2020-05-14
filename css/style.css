@@ -31,6 +31,9 @@ main .main_container{
   overflow-y: auto;
 
 }
+main a{
+  color: #a3a3a3;
+}
 /*effettua l'upgrade*/
 main .top_fix{
   left: 200px;
@@ -53,13 +56,57 @@ main .top_fix .upgrade a{
   border: 1px solid white;
   border-radius: 20px;
 }
-
-
+/*menu superiore*/
+main .main_container .categorie{
+  padding-top: 115px;
+  text-align: center;
+}
 main .main_container .categorie li{
   display: inline-block;
+  margin-right: 24px;
+  font-size: 14px;
 }
 
 
+/*parte principale*/
+main .main_container .wrapper{
+  padding: 40px 20px;
+}
+main .main_container .wrapper p{
+  color: #a3a3a3;
+}
+main .main_container .wrapper h2{
+  margin-bottom: 30px;
+}
+
+/*contenitori*/
+main .main_container .wrapper .box{
+  width: calc(100%/6);
+  float: left;
+}
+main .main_container .wrapper .box .box_content{
+  width: 90%;
+  text-align: center;
+}
+main .main_container .wrapper .box .box_content h4{
+  margin: 10px 0;
+}
+main .main_container .wrapper .box .box_content img{
+  width: 100%;
+}
+
+
+
+@media all and (max-width: 991px){
+  main .main_container .wrapper .box{
+    width: calc(100%/2);
+  }
+}
+@media all and (min-width: 992px) and (max-width: 1200px){
+  main .main_container .wrapper .box{
+    width: calc(100%/4);
+  }
+}
 
 
 /*nav*/
@@ -110,9 +157,7 @@ main .playlist,
 main .name_playlist{
   padding-left: 13px;
 }
-main a{
-  color: #838383;
-}
+
 main .playlist i{
   font-size: 40px;
   vertical-align: middle;
