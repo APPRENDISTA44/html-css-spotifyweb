@@ -16,7 +16,7 @@ a{
   color: white;
 }
 /* clearfix */
-.container::after{
+.clearfix::after{
   content: '';
   display: table;
   clear: both;
@@ -94,6 +94,10 @@ main .main_container .wrapper .box .box_content h4{
 main .main_container .wrapper .box .box_content img{
   width: 100%;
 }
+main .main_container .wrapper.artist .box .box_content img{
+  border-radius: 50%;
+}
+
 
 
 
