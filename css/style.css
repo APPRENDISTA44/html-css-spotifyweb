@@ -29,6 +29,7 @@ main .main_container{
   float: left;
   width: calc(100% - 200px);
   overflow-y: auto;
+
 }
 
 main .top_fix{
@@ -36,10 +37,21 @@ main .top_fix{
   position: fixed;
   height: 100px;
   width: calc(100% - 200px);
-  background-color: red;
-  opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 3;
+  display: flex;
+  align-items: center;
 }
+main .top_fix .upgrade{
+  color: white;
+  position: absolute;
+  right: 20px;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+
 
 /*nav*/
 main .nav_container{
