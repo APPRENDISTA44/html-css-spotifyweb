@@ -215,7 +215,7 @@ main .playlist i{
   vertical-align: middle;
 }
 main .playlist_container{
-  height: calc(100vh - 510px)
+  height: calc(100vh - 525px)
 }
 main .playlist_container .name_playlist{
   overflow-y: auto;
@@ -226,6 +226,7 @@ main .playlist_container .name_playlist{
 }
 /*sezione utente*/
 main .utente{
+  height: 100px;
   padding-left: 13px;
   padding-right: 13px;
 }
@@ -300,7 +301,7 @@ main .utente hr{
       display: none;
     }
     main .playlist_container{
-      height: calc(100vh - 400px)
+      height: calc(100vh - 425px)
     }
 }
 
